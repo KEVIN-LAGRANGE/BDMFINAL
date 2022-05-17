@@ -89,8 +89,9 @@ if __name__=='__main__':
       return (x[0][0],'','',m,'')
     elif x[0][1] == '2020-10':
       return (x[0][0],'','','',m) 
-  print("l2", l2[:20])
-  print("l2", len(l2))
+  print("l2[:20]", l2[:20])
+  print("len(l2)", len(l2))
+  print("len(set(l2))", len(set(l2)))
   print("cbg['cbg_fips']", len(cbg['cbg_fips']))
 
   print('after mapper1',sc.textFile('/tmp/bdm/weekly-patterns-nyc-2019-2020/*', use_unicode=True).mapPartitionsWithIndex(mapper1).count())
