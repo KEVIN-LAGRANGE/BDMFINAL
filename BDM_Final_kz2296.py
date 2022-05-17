@@ -93,7 +93,7 @@ if __name__=='__main__':
   print("len(set(l2))", len(set(l2)))
   print("cbg['cbg_fips']", len(cbg['cbg_fips']))
 
-  print('after mapper1',sc.textFile('/tmp/bdm/weekly-patterns-nyc-2019-2020/*', use_unicode=True).mapPartitionsWithIndex(mapper1).count())
+  print('88888 88888 888888 after mapper1',sc.textFile('/tmp/bdm/weekly-patterns-nyc-2019-2020/*', use_unicode=True).mapPartitionsWithIndex(mapper1).count())
   print('after mapper3',sc.textFile('/tmp/bdm/weekly-patterns-nyc-2019-2020/*', use_unicode=True).mapPartitionsWithIndex(mapper3).take(20))
   
   # output1 = sc.textFile('/tmp/bdm/weekly-patterns-nyc-2019-2020/*', use_unicode=True).mapPartitionsWithIndex(mapper1) \
