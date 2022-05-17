@@ -30,7 +30,7 @@ if __name__=='__main__':
   ll = []
   for i in cbg.index:
     ll.append(t.transform(cbg.loc[i,'latitude'],cbg.loc[i,'longitude']))
-  loc = pd.Series(ll,index = cbg.index)
+  loc = pd.Series(ll,index = cbg.cbg_fips)
   
   def medianFind(lst):
         lst.sort()
